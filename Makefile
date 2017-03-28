@@ -18,7 +18,7 @@ INCLUDE_PATH = -I./include/ \
 LIBRARY = libnemodb.a
 ROCKSDB = $(ROCKSDB_PATH)/librocksdb.a
 
-.PHONY: all clean
+.PHONY: all clean distclean
 
 BASE_OBJS := $(wildcard $(SRC_DIR)/*.cc)
 BASE_OBJS += $(wildcard $(SRC_DIR)/*.c)
