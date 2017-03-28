@@ -3,7 +3,7 @@
 // found in the LICENSE file. See the AUTHORS file for names of contributors.
 #ifndef ROCKSDB_LITE
 
-#include "db_nemo_impl.h"
+#include "nemo-rocksdb/db_nemo_impl.h"
 
 #include "db/filename.h"
 #include "db/write_batch_internal.h"

@@ -4,10 +4,12 @@ CXXFLAGS = $(PLATFORM_CXXFLAGS) $(PLATFORM_SHARED_CFLAGS) -Wall -W -Wno-unused-p
 SRC_DIR = .
 OUTPUT = .
 
-LIB_PATH = -L../output/lib
+LIB_PATH = -L../lib \
+					 -L../rocksdb
+
 LIBS = -lnemodb -lrocksdb $(PLATFORM_LDFLAGS)
 
-INCLUDE_PATH = -I../output/include/ \
+INCLUDE_PATH = -I../include/ \
 							 -I../rocksdb/ \
 							 -I../rocksdb/include/
 
