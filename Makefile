@@ -8,7 +8,7 @@ endif
 
 dummy := $(shell (cd $(ROCKSDB_PATH); export ROCKSDB_ROOT="$(ROCKSDB_PATH)"; "$(ROCKSDB_PATH)/build_tools/build_detect_platform" "$(CURDIR)/make_config.mk"))
 include $(CURDIR)/make_config.mk
-CXXFLAGS = $(PLATFORM_CXXFLAGS) $(PLATFORM_SHARED_CFLAGS) -Wall -W -Wno-unused-parameter -g -O2 -D__STDC_FORMAT_MACROS 
+CXXFLAGS = $(PLATFORM_CXXFLAGS) $(PLATFORM_SHARED_CFLAGS) -Wall -W -Wno-unused-parameter -g -O2 -D__STDC_FORMAT_MACROS
 
 
 INCLUDE_PATH = -I./include/ \

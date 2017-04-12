@@ -6,9 +6,6 @@
 #pragma once
 #ifndef ROCKSDB_LITE
 
-#include <string>
-#include <vector>
-
 #include "rocksdb/utilities/stackable_db.h"
 #include "rocksdb/db.h"
 
